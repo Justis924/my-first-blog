@@ -1,22 +1,57 @@
+{% load static %}
 <html>
-    <head>
-        <title>私のblog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+  <head>
+    <title>遊戯王まとめ</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>遊戯王まとめ</h1>
+    </header>
+    <main>
+      {% for post in posts %}
+        <div id="nav">
+          <h3>サイトの概要</h3>
+          <ul>
+            <li><a href="info.html">サイト紹介</a></li>
+          </ul>
+          <h3>気になる話題</h3>
+          <ul>
+            <li><a href="topic.html">記事１</a></li>
+            <li><a href="topic.html">記事２</a></li>
+            <li><a href="topic.html">記事３</a></li>
+          </ul>
+          <h3>最新情報</h3>
+          <ul>
+            <li><a href="news.html">その１</a></li>
+            <li><a href="news.html">その２</a></li>
+          </ul>
+          <h3>交流・意見箱</h3>
+          <ul>
+            <li><a href="conv.html">ご意見ご要望</a></li>
+            <li><a href="conv.html">メール</a></li>
+          </ul>
+        </div>
+        <div id="contents">
+          <h2>遊戯王まとめへようこそ！</h2>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
+          <p>ここにはコンテンツが入ります</p>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. こんにちは！ よろしくお願いします！ </p>
-        </div>
-
-        <div>
-            <p>公開日: 2014/06/14, 12:14</p>
-            <h2><a href="">2番目の投稿</a></h2>
-            <p> こんにちは！ よろしくお願いします！ </p>
-        </div>
-    </body>
+    </main>
+      {% endfor %}
+    <footer>
+      <p>○○様によって管理、運営されております</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,29 @@
+header {
+  background-color: brown;
+  height: 20%;
+  text-align: center;
+}
+
+main {
+  height: 70%;
+}
+
+#nav {
+  background-color: #99ff99;
+  width:15%;
+  float:left;
+}
+
+#contents {
+  background-color: #ffc;
+  width: 85%;
+  float: right;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 10%;
+}
