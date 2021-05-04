@@ -1,11 +1,11 @@
 header {
   background-color: brown;
-  height: 20%;
+  height: 15%;
   text-align: center;
 }
 
 main {
-  height: 60%;
+  height: 75%;
 }
 
 #nav {
@@ -26,5 +26,5 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  height: 20%;
+  height: 10%;
 }
