@@ -6,7 +6,7 @@
           <p>大変申し訳ありませんが、まだ用意ができておりませんので、下記のリンクからご確認ください。</p>
           <a href="https://www.yugioh-card.com/japan/notice/">公式サイトのお知らせへジャンプする</a>
           <p>ホームに戻るには、</p>
-          <a href="gekioko2.pythonanywhere.com/">こちらをクリック</a>
+          <a href="{{request.META.HTTP_REFERER}}">こちらをクリック</a>
         </div>
         {% endblock %}
         

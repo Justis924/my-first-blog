@@ -8,7 +8,7 @@
           <p>twittermもどうぞ</p>
           <a href="https://twitter.com/search?q=%E9%81%8A%E6%88%AF%E7%8E%8B&src=recent_search_click">ツイッターへジャンプする</a>
           <p>ホームに戻る際には、</p>
-          <a href="gekioko2.pythonanywhere.com/">こちらをクリック！</a>
+          <a href="{{request.META.HTTP_REFERER}}">こちらをクリック！</a>
         </div>
         {% endblock %}
         
