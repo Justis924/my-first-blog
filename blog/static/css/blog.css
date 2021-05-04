@@ -5,13 +5,17 @@ header {
 }
 
 main {
-  height: 70%;
+  height: 60%;
 }
 
 #nav {
   background-color: #99ff99;
   width:15%;
   float:left;
+}
+
+#nav li { 
+  font-size: 200%;
 }
 
 #contents {
@@ -25,5 +29,5 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  height: 10%;
+  height: 20%;
 }

@@ -1,7 +1,23 @@
 from django.shortcuts import render
-from django.utils import timezone
-from .models import Post
 
+# Create your views here.
+from django.http import HttpResponse
+from django.template import Context, loader
+ 
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+    template = loader.get_template('post_list.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
+
+def conv(request):
+    return render(request, 'blog/conv.html')
+ 
+def info(request):
+    return render(request, 'blog/info.html')
+
+
+def news(request):
+    return render(request, 'blog/news.html')
+ 
+def topic(request):
+    return render(request, 'blog/topic.html')

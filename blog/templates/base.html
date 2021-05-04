@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+  <head>
+    <title>遊戯王まとめ</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <header>
+      <h2>遊戯王まとめ</h2>
+    </header>
+    <main>
+        <div id="nav">
+          <h3>サイトの概要</h3>
+          <ul>
+            <li><a href="info/">サイト紹介</a></li>
+          </ul>
+          <h3>今日のオススメ</h3>
+          <ul>
+            <li><a href="topic/">記事１</a></li>
+            <li><a href="topic/">記事２</a></li>
+            <li><a href="topic/">記事３</a></li>
+            <li><a href="topic/">記事４</a></li>
+            <li><a href="topic/">記事５</a></li>
+            <li><a href="topic/">記事６</a></li>
+          </ul>
+          <h3>最新情報</h3>
+          <ul>
+            <li><a href="news/">その１</a></li>
+            <li><a href="news/">その２</a></li>
+            <li><a href="news/">その３</a></li>
+            <li><a href="news/">その４</a></li>
+            <li><a href="news/">その５</a></li>
+          </ul>
+          <h3>交流・意見箱</h3>
+          <ul>
+            <li><a href="conv/">ご意見ご要望</a></li>
+            <li><a href="conv/">交流スレ</a></li>
+          </ul>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+      <p>○○様によって管理、運営されております</p>
+    </footer>
+  </body>
+</html>
